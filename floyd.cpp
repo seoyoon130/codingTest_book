@@ -30,7 +30,7 @@ int main(){
         for(int a = 1;a<=n;a++){
             //3. 마지막 지점
             for(int b = 1;b<=n;b++){
-                grpah[a][b] = min(graph[a][b], graph[a][k] + graph[k][b]);
+                graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b]);
             }
         }
     }
