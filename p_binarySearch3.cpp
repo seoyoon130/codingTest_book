@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <iostream>
 using namespace std;
-    vector<int> v;
+vector<int> v(200001);
 
 int findGap(int n, int c){
     int r = v[n-1];
