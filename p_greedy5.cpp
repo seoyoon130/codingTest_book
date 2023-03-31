@@ -2,7 +2,6 @@
 using namespace std;
 int arr[11];
 int n, m;
-
 int main(){
     cin >> n >> m;
     
