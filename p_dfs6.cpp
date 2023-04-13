@@ -10,7 +10,7 @@ int oper[4];
 void dfs(int plus, int minus, int multiple, int divide, int x, int sum){
     if(x==n-1){
         if(sum<MIN) MIN = sum;
-        if(sum<MAX)MAX = sum;
+        if(sum>MAX)MAX = sum;
     }
         if(plus>0) dfs(plus-1, minus, multiple, divide, x+1, sum+num[x+1]);
         if(minus>0) dfs(plus, minus-1, multiple, divide, x+1, sum-num[x+1]);
